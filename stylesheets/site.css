@@ -417,8 +417,9 @@ a {
     @media screen and (max-width: 650px) {
       /* line 66, site.css.scss */
       #menu .box h1 {
-        font-size: 3.2em;
-        width: 340px;
+      	position:relative;
+        font-size: 2.8em;
+        width: 320px;
 		 margin: 3em auto ; } }
   /* line 79, site.css.scss */
   #menu .box p {
@@ -431,7 +432,8 @@ a {
     @media screen and (max-width: 650px) {
       /* line 79, site.css.scss */
       #menu .box p {
-        width: 340px;
+      	position:relative;
+        width: 300px;
         font-size: 1.2em;
         margin: 1em auto; } }
     /* line 91, site.css.scss */

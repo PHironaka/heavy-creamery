@@ -418,8 +418,8 @@ a {
       /* line 66, site.css.scss */
       #menu .box h1 {
         font-size: 3.2em;
-        width: 350px;
-        margin: 6em auto 2em; } }
+        width: 370px;
+		 margin: 3em auto ; } }
   /* line 79, site.css.scss */
   #menu .box p {
     width: 395px;
@@ -431,8 +431,8 @@ a {
     @media screen and (max-width: 650px) {
       /* line 79, site.css.scss */
       #menu .box p {
-        width: 350px;
-        font-size: 1.5em;
+        width: 360px;
+        font-size: 1.2em;
         margin: 1em auto; } }
     /* line 91, site.css.scss */
     #menu .box p img {

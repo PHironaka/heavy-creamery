@@ -557,7 +557,7 @@ a {
   @media screen and (max-width: 650px) {
     /* line 214, site.css.scss */
     .logo {
-      width: 310px; } }
+      width: 320px; } }
   /* line 228, site.css.scss */
   .logo img {
     height: 20.75em;
@@ -571,7 +571,7 @@ a {
       /* line 228, site.css.scss */
       .logo img {
         margin-top: 11%;
-        height: 8.75em; } }
+        height: 7.75em; } }
 
 /* line 245, site.css.scss */
 .welcome {

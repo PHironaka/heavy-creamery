@@ -535,7 +535,7 @@ a {
   @media screen and (max-width: 650px) {
     /* line 195, site.css.scss */
     .madbury-logo {
-      position: absolute;
+     position: relative;
       right: 10px; } }
   /* line 204, site.css.scss */
   .madbury-logo img {

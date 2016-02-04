@@ -349,36 +349,52 @@ table {
 
 /* line 6, site.css.scss */
 body {
-  background-image: url(http://phironaka.github.io/heavy-creamery/images/IMG_7065_4.jpg);
+  background-image: url(/images/IMG_7065_4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: #999;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   letter-spacing: .12em;
   font-size: .8em; }
+  @media screen and (max-width: 650px) {
+    /* line 6, site.css.scss */
+    body {
+      background-image: none;
+      background: #ff5f5f; } }
 
-/* line 22, site.css.scss */
+/* line 27, site.css.scss */
 body, img {
   transition: all .2s linear;
   -o-transition: all .2s linear;
   -moz-transition: all .2s linear;
   -webkit-transition: all .2s linear; }
 
-/* line 28, site.css.scss */
+/* line 35, site.css.scss */
 a {
   color: black; }
 
-/* line 31, site.css.scss */
+/* line 38, site.css.scss */
 #head {
   margin-top: 20px;
   height: 109px; }
 
-/* line 33, site.css.scss */
+/* line 40, site.css.scss */
+.container {
+  display: block;
+  width: 94.4702%;
+  margin: 0 auto; }
+  @media screen and (max-width: 650px) {
+    /* line 40, site.css.scss */
+    .container {
+      width: 100%; } }
+
+/* line 50, site.css.scss */
 #menu .box {
-  position: fixed;
+  position: absolute;
   text-align: center;
   overflow: hidden;
   z-index: -1;
@@ -387,25 +403,38 @@ a {
   height: 100%;
   left: 0px;
   top: 0px;
-  background: #fff;
+  background: #ff5f5f;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-  /* line 49, site.css.scss */
-  #menu .box p {
-    width: 500px;
-    margin: 10em auto 0;
-    font-size: 1.2em;
+  /* line 66, site.css.scss */
+  #menu .box h1 {
+    width: 395px;
+    margin: 4em 0 2em;
+    font-size: 3.5em;
     letter-spacing: normal;
-    line-height: 1.5em;
-    text-align: justify; }
+    text-align: left; }
     @media screen and (max-width: 650px) {
-      /* line 49, site.css.scss */
+      /* line 66, site.css.scss */
+      #menu .box h1 {
+        font-size: 2.5em;
+        text-align: center; } }
+  /* line 78, site.css.scss */
+  #menu .box p {
+    width: 395px;
+    margin: 2em 0;
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-align: left; }
+    @media screen and (max-width: 650px) {
+      /* line 78, site.css.scss */
       #menu .box p {
-        width: 400px; } }
+        width: 300px;
+        margin: 1em auto; } }
 
-/* line 63, site.css.scss */
+/* line 93, site.css.scss */
 #menu ul {
   position: relative;
   top: 20%;
@@ -418,12 +447,12 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-/* line 76, site.css.scss */
+/* line 106, site.css.scss */
 #menu li {
   display: inline-block;
   margin: 20px; }
 
-/* line 81, site.css.scss */
+/* line 111, site.css.scss */
 #menu li a {
   border-radius: 3px;
   padding: 15px;
@@ -436,16 +465,16 @@ a {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
-/* line 94, site.css.scss */
+/* line 124, site.css.scss */
 #menu li a:hover {
   border-color: #fff; }
 
-/* line 96, site.css.scss */
+/* line 126, site.css.scss */
 #menu li a i {
   margin-right: 5px;
   font-size: 24px; }
 
-/* line 101, site.css.scss */
+/* line 131, site.css.scss */
 #toggle-nav-label {
   position: absolute;
   left: 30px;
@@ -453,28 +482,28 @@ a {
   cursor: pointer;
   text-transform: uppercase; }
 
-/* line 109, site.css.scss */
+/* line 139, site.css.scss */
 #toggle-nav {
   display: none; }
 
-/* line 111, site.css.scss */
+/* line 141, site.css.scss */
 #toggle-nav:checked ~ .box {
   opacity: 1;
   z-index: 400; }
 
-/* line 116, site.css.scss */
+/* line 146, site.css.scss */
 #toggle-nav:checked ~ .box ul {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1); }
 
-/* line 123, site.css.scss */
+/* line 153, site.css.scss */
 #toggle-nav:checked ~ #toggle-nav-label {
   background: #fff;
   color: rgba(0, 0, 0, 0.8); }
 
-/* line 131, site.css.scss */
+/* line 161, site.css.scss */
 .top-nav a {
   text-decoration: none;
   text-transform: uppercase;
@@ -482,57 +511,59 @@ a {
   float: left;
   margin: 2em 4em; }
 
-/* line 145, site.css.scss */
+/* line 175, site.css.scss */
 .bottom-nav .copyright {
-  left: 30px;
+  right: 30px;
   position: absolute;
   bottom: 3em; }
-/* line 151, site.css.scss */
+/* line 181, site.css.scss */
 .bottom-nav .instagram {
-  right: 30px;
+  left: 30px;
   position: absolute;
   bottom: 3em;
   text-decoration: none; }
 
-/* line 160, site.css.scss */
+/* line 190, site.css.scss */
 .madbury-logo {
   position: absolute;
   right: 40px;
   top: 0; }
-  /* line 164, site.css.scss */
+  /* line 194, site.css.scss */
   .madbury-logo img {
-    width: 7em; }
+    width: 7em;
+    z-index: 10000;
+    position: relative; }
 
-/* line 170, site.css.scss */
+/* line 202, site.css.scss */
 .logo {
   display: block;
   width: 838px;
   margin: 0 auto;
   position: relative; }
   @media screen and (max-width: 850px) {
-    /* line 170, site.css.scss */
+    /* line 202, site.css.scss */
     .logo {
       width: 610px; } }
   @media screen and (max-width: 650px) {
-    /* line 170, site.css.scss */
+    /* line 202, site.css.scss */
     .logo {
       width: 400px; } }
-  /* line 184, site.css.scss */
+  /* line 216, site.css.scss */
   .logo img {
     height: 20.75em;
     margin-top: 15%; }
     @media screen and (max-width: 850px) {
-      /* line 184, site.css.scss */
+      /* line 216, site.css.scss */
       .logo img {
         margin-top: 11%;
         height: 14.75em; } }
     @media screen and (max-width: 650px) {
-      /* line 184, site.css.scss */
+      /* line 216, site.css.scss */
       .logo img {
         margin-top: 11%;
         height: 8.75em; } }
 
-/* line 201, site.css.scss */
+/* line 233, site.css.scss */
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s;

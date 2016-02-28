@@ -1,874 +1,387 @@
-/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/*
- * Corrects `block` display not defined in IE 8/9.
- */
-/* line 11, _normalize.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-  display: block; }
+@charset "utf-8";
+@import "normalize";
+$break-small: 850px;
+$break-large: 1000px;
+$mobile: 450px;
 
-/*
- * Corrects `inline-block` display not defined in IE 8/9.
- */
-/* line 29, _normalize.scss */
-audio,
-canvas,
-video {
-  display: inline-block; }
-
-/*
- * Prevents modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-/* line 40, _normalize.scss */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/*
- * Addresses styling for `hidden` attribute not present in IE 8/9.
- */
-/* line 49, _normalize.scss */
-[hidden] {
-  display: none; }
-
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/*
- * 1. Sets default font family to sans-serif.
- * 2. Prevents iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-/* line 63, _normalize.scss */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */ }
-
-/*
- * Removes default margin.
- */
-/* line 73, _normalize.scss */
 body {
-  margin: 0; }
 
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/*
- * Addresses `outline` inconsistency between Chrome and other browsers.
- */
-/* line 85, _normalize.scss */
-a:focus {
-  outline: thin dotted; }
 
-/*
- * Improves readability when focused and also mouse hovered in all browsers.
- */
-/* line 93, _normalize.scss */
-a:active,
-a:hover {
-  outline: 0; }
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/*
- * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
- * Safari 5, and Chrome.
- */
-/* line 107, _normalize.scss */
-h1 {
-  font-size: 2em; }
-
-/*
- * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
- */
-/* line 115, _normalize.scss */
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-/*
- * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 123, _normalize.scss */
-b,
-strong {
-  font-weight: bold; }
-
-/*
- * Addresses styling not present in Safari 5 and Chrome.
- */
-/* line 132, _normalize.scss */
-dfn {
-  font-style: italic; }
-
-/*
- * Addresses styling not present in IE 8/9.
- */
-/* line 140, _normalize.scss */
-mark {
-  background: #ff0;
-  color: #000; }
-
-/*
- * Corrects font family set oddly in Safari 5 and Chrome.
- */
-/* line 150, _normalize.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em; }
-
-/*
- * Improves readability of pre-formatted text in all browsers.
- */
-/* line 162, _normalize.scss */
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word; }
-
-/*
- * Sets consistent quote types.
- */
-/* line 172, _normalize.scss */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019"; }
-
-/*
- * Addresses inconsistent and variable font size in all browsers.
- */
-/* line 180, _normalize.scss */
-small {
-  font-size: 80%; }
-
-/*
- * Prevents `sub` and `sup` affecting `line-height` in all browsers.
- */
-/* line 188, _normalize.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-/* line 196, _normalize.scss */
-sup {
-  top: -0.5em; }
-
-/* line 200, _normalize.scss */
-sub {
-  bottom: -0.25em; }
-
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-/*
- * Removes border when inside `a` element in IE 8/9.
- */
-/* line 212, _normalize.scss */
-img {
-  border: 0; }
-
-/*
- * Corrects overflow displayed oddly in IE 9.
- */
-/* line 220, _normalize.scss */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-/*
- * Addresses margin not present in IE 8/9 and Safari 5.
- */
-/* line 232, _normalize.scss */
-figure {
-  margin: 0; }
-
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-/*
- * Define consistent border, margin, and padding.
- */
-/* line 244, _normalize.scss */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-/*
- * 1. Corrects color not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-/* line 255, _normalize.scss */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/*
- * 1. Corrects font family not being inherited in all browsers.
- * 2. Corrects font size not being inherited in all browsers.
- * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
- */
-/* line 266, _normalize.scss */
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 2 */
-  margin: 0;
-  /* 3 */ }
-
-/*
- * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-/* line 280, _normalize.scss */
-button,
-input {
-  line-height: normal; }
-
-/*
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Corrects inability to style clickable `input` types in iOS.
- * 3. Improves usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-/* line 293, _normalize.scss */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */ }
-
-/*
- * Re-set default cursor for disabled elements.
- */
-/* line 305, _normalize.scss */
-button[disabled],
-input[disabled] {
-  cursor: default; }
-
-/*
- * 1. Addresses box sizing set to `content-box` in IE 8/9.
- * 2. Removes excess padding in IE 8/9.
- */
-/* line 315, _normalize.scss */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/*
- * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-/* line 327, _normalize.scss */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-  box-sizing: content-box; }
-
-/*
- * Removes inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-/* line 339, _normalize.scss */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/*
- * Removes inner padding and border in Firefox 4+.
- */
-/* line 348, _normalize.scss */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-/*
- * 1. Removes default vertical scrollbar in IE 8/9.
- * 2. Improves readability and alignment in all browsers.
- */
-/* line 359, _normalize.scss */
-textarea {
-  overflow: auto;
-  /* 1 */
-  vertical-align: top;
-  /* 2 */ }
-
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-/*
- * Remove most spacing between table cells.
- */
-/* line 372, _normalize.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* line 7, site.css.scss */
-body {
-<<<<<<< Updated upstream
-  background-image: url(http://phironaka.github.io/heavy-creamery/images/IMG_7065_4.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #fff;
-=======
-  background-color: #ff5f5f;
->>>>>>> Stashed changes
+	background-color: #ff5f5f;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   letter-spacing: .12em;
-  font-size: .8em; }
-<<<<<<< Updated upstream
-  @media screen and (max-width: 650px) {
-=======
-  @media screen and (max-width: 850px) {
->>>>>>> Stashed changes
-    /* line 7, site.css.scss */
-    body {
-      background-image: none;
-      background: #FC6063; } }
+  font-size: .8em;
 
-<<<<<<< Updated upstream
-/* line 28, site.css.scss */
-=======
-/* line 24, site.css.scss */
->>>>>>> Stashed changes
+	@media screen and (max-width: $break-small) {
+		background-image: none;
+		background: #FC6063;
+	}
+
+}
+
 body, img {
-  transition: all .2s linear;
-  -o-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -webkit-transition: all .2s linear; }
+    transition:all .2s linear;
+    -o-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+}
 
-<<<<<<< Updated upstream
-/* line 36, site.css.scss */
-a {
-  color: black; }
-
-/* line 39, site.css.scss */
-=======
-/* line 31, site.css.scss */
 #myBtn {
-  background: none;
-  border: none;
-  outline: 0; }
-
-/* line 36, site.css.scss */
+	background: none;
+	border: none;
+	outline: 0;
+}
 .modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
-  left: 0;
-  top: 100px;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: transparent;
-  /* Fallback color */ }
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 100px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: transparent; /* Fallback color */
+
+}
 
 /* Modal Content */
-/* line 51, site.css.scss */
 .modal-content {
-  position: relative;
-  margin: auto;
-  padding: 0;
-  width: 80%;
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.2s;
-  animation-name: animatetop;
-  animation-duration: 0.2s; }
-  /* line 61, site.css.scss */
-  .modal-content img {
-    max-width: 100%; }
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.2s;
+    animation-name: animatetop;
+    animation-duration: 0.2s;
+
+		img {
+			max-width:100%;
+		}
+
+}
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {
-    top: -200px;
-    opacity: 0; }
-  to {
-    top: 0px;
-    opacity: 1; } }
-@keyframes animatetop {
-  from {
-    top: -200px;
-    opacity: 0; }
-  to {
-    top: 0px;
-    opacity: 1; } }
-/* The Close Button */
-/* line 79, site.css.scss */
-.close {
-  float: right;
-  font-size: 24px;
-  margin: 10px 0; }
+    from {top:-200px; opacity:0}
+    to {top:0px; opacity:1}
+}
 
-/* line 85, site.css.scss */
+@keyframes animatetop {
+    from {top:-200px; opacity:0}
+    to {top:0px; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    float: right;
+    font-size: 24px;
+		margin: 10px 0;
+}
+
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer; }
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-/* line 92, site.css.scss */
 .modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white; }
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
 
-/* line 98, site.css.scss */
-.modal-body {
-  padding: 2px 16px; }
+.modal-body {padding: 2px 16px;}
 
-/* line 100, site.css.scss */
 .modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white; }
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
 
-/* line 107, site.css.scss */
+
 a {
-  color: black; }
+color: black;}
 
-/* line 110, site.css.scss */
->>>>>>> Stashed changes
-#head {
-  margin-top: 20px;
-  height: 109px; }
+#head { margin-top: 20px; height: 109px; }
 
-<<<<<<< Updated upstream
-/* line 41, site.css.scss */
 .container {
-  display: block;
-  width: 94.4702%;
-  margin: 0 auto; }
-  @media screen and (max-width: 650px) {
-    /* line 41, site.css.scss */
-    .container {
-      width: 100%; } }
+	max-width: 72em;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+margin-bottom: 3em;
+	@media screen and (max-width: $break-large) {
+		max-width: 60em;
+	}
 
-/* line 51, site.css.scss */
-=======
-/* line 112, site.css.scss */
-.container {
-  max-width: 72em;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: 3em; }
-  @media screen and (max-width: 1000px) {
-    /* line 112, site.css.scss */
-    .container {
-      max-width: 60em; } }
-  @media screen and (max-width: 850px) {
-    /* line 112, site.css.scss */
-    .container {
-      width: 100%; } }
+		@media screen and (max-width: $break-small) {
+			width: 100%;
+		}
+}
 
-/* line 128, site.css.scss */
->>>>>>> Stashed changes
+
 #menu .box {
-  position: absolute;
-  text-align: center;
-  z-index: -1;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  background: #FC6063;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-<<<<<<< Updated upstream
-  /* line 66, site.css.scss */
-  #menu .box h1 {
-    width: 402px;
-    margin: 4em 0 2em;
-    font-size: 3.5em;
-    letter-spacing: normal;
-    text-align: left; }
-    @media screen and (max-width: 650px) {
-      /* line 66, site.css.scss */
-      #menu .box h1 {
-      	position:relative;
-        font-size: 2.8em;
-        width: 320px;
-		 margin: 3em auto ; } }
-  /* line 79, site.css.scss */
-  #menu .box p {
-    width: 395px;
-    margin: 2em 0;
-    font-size: 1em;
-    font-weight: normal;
-    letter-spacing: normal;
-    text-align: left; }
-    @media screen and (max-width: 650px) {
-      /* line 79, site.css.scss */
-      #menu .box p {
-      	position:relative;
-        width: 300px;
-        font-size: 1.2em;
-        margin: 1em auto; } }
-    /* line 91, site.css.scss */
-    #menu .box p img {
-      max-width: 338px; }
+	position: absolute;
+	text-align: center;
+	z-index: -1;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background: #FC6063;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 
-/* line 99, site.css.scss */
-=======
-  /* line 143, site.css.scss */
-  #menu .box h1 {
-    float: left;
-    display: block;
-    margin-right: 3.57866%;
-    width: 31.76157%;
+      h1 {
+				float: left;
+			display: block;
+			margin-right: 3.57866%;
+			    width: 31.76157%;
     margin: 6.2em 0 2em;
-    font-size: 2.5em;
-    letter-spacing: normal;
-    text-align: left;
-    float: left;
-    padding: 0 26px 0 0; }
-    @media screen and (max-width: 1000px) {
-      /* line 143, site.css.scss */
-      #menu .box h1 {
-        width: 28.76157%;
-        margin: 9.2em 0 2em;
-        font-size: 1.9em; } }
-    @media screen and (max-width: 850px) {
-      /* line 143, site.css.scss */
-      #menu .box h1 {
-        font-size: 2.8em;
-        width: 320px;
-        margin: 4em 1em 1em; } }
-  /* line 169, site.css.scss */
-  #menu .box .contact {
-    float: left;
-    display: block;
-    margin-right: 3.57866%;
-    width: 28.76157%;
-    margin-top: 14em; }
-    @media screen and (max-width: 1000px) {
-      /* line 169, site.css.scss */
-      #menu .box .contact {
-        margin-top: 16em; } }
-    @media screen and (max-width: 850px) {
-      /* line 169, site.css.scss */
-      #menu .box .contact {
-        float: none;
-        margin-top: 3em;
-        margin-left: 3em; } }
-    /* line 188, site.css.scss */
-    #menu .box .contact p {
-      margin: 2em 0;
-      font-size: 1em;
-      font-weight: normal;
-      letter-spacing: normal;
-      text-align: left; }
-      @media screen and (max-width: 850px) {
-        /* line 188, site.css.scss */
-        #menu .box .contact p {
-          width: 350px;
-          font-size: 1.5em;
-          margin: 1em auto; } }
-    /* line 205, site.css.scss */
-    #menu .box .contact img {
-      max-width: 338px; }
+font-size: 2.5em;
+letter-spacing: normal;
+text-align: left;
+float:left;
+padding: 0 26px 0 0;
 
-/* line 215, site.css.scss */
->>>>>>> Stashed changes
+@media screen and (max-width: $break-large) {
+width: 28.76157%;
+margin: 9.2em 0 2em;
+font-size: 1.9em;
+
+}
+
+        @media screen and (max-width: $break-small) {
+					font-size: 2.8em;
+					width: 320px;
+					margin: 4em 1em 1em;
+        }
+      }
+
+.contact {
+	float: left;
+	display: block;
+	margin-right: 3.57866%;
+	width: 28.76157%;
+	margin-top: 14em;
+
+	@media screen and (max-width: $break-large) {
+	    margin-top: 16em;
+
+	}
+
+	@media screen and (max-width: $break-small) {
+	    float: none;
+			margin-top: 3em;
+			margin-left: 3em;
+
+	}
+
+		p {
+
+		margin: 2em 0;
+font-size: 1em;
+font-weight: normal;
+letter-spacing: normal;
+text-align: left;
+
+
+@media screen and (max-width: $break-small) {
+	width: 350px;
+	font-size: 1.5em;
+	margin: 1em auto;
+}
+}
+
+
+img {
+	max-width: 338px;
+}
+
+			}
+
+}
+
+
+
 #menu ul {
-  position: relative;
-  top: 20%;
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  -ms-transform: scale(2);
-  transform: scale(2);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+	position: relative;
+	top: 20%;
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	transform: scale(2);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
 
-<<<<<<< Updated upstream
-/* line 112, site.css.scss */
-=======
-/* line 228, site.css.scss */
->>>>>>> Stashed changes
 #menu li {
-  display: inline-block;
-  margin: 20px; }
+	display: inline-block;
+	margin: 20px;
+}
 
-<<<<<<< Updated upstream
-/* line 117, site.css.scss */
-=======
-/* line 233, site.css.scss */
->>>>>>> Stashed changes
 #menu li a {
-  border-radius: 3px;
-  padding: 15px;
-  border: 1px solid transparent;
-  text-decoration: none;
-  font-size: 18px;
-  color: #000;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+	border-radius: 3px;
+	padding: 15px;
+	border: 1px solid transparent;
+	text-decoration: none;
+	font-size: 18px;
+	color: #000;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
 
-<<<<<<< Updated upstream
-/* line 130, site.css.scss */
-#menu li a:hover {
-  border-color: #fff; }
+#menu li a:hover { border-color: #fff; }
 
-/* line 132, site.css.scss */
-=======
-/* line 246, site.css.scss */
-#menu li a:hover {
-  border-color: #fff; }
-
-/* line 248, site.css.scss */
->>>>>>> Stashed changes
 #menu li a i {
-  margin-right: 5px;
-  font-size: 24px; }
+	margin-right: 5px;
+	font-size: 24px;
+}
 
-<<<<<<< Updated upstream
-/* line 137, site.css.scss */
-=======
-/* line 253, site.css.scss */
->>>>>>> Stashed changes
 #toggle-nav-label {
   position: absolute;
-  left: 30px;
-  top: 39px;
-  cursor: pointer;
-  text-transform: uppercase; }
+    left: 30px;
+top: 39px;
+cursor: pointer;
+text-transform: uppercase;
+}
 
-<<<<<<< Updated upstream
-/* line 145, site.css.scss */
-#toggle-nav {
-  display: none; }
+#toggle-nav { display: none; }
 
-/* line 147, site.css.scss */
-=======
-/* line 261, site.css.scss */
-#toggle-nav {
-  display: none; }
-
-/* line 263, site.css.scss */
->>>>>>> Stashed changes
 #toggle-nav:checked ~ .box {
-  opacity: 1;
-  z-index: 400; }
+	opacity: 1;
+	z-index: 400;
+}
 
-<<<<<<< Updated upstream
-/* line 152, site.css.scss */
-=======
-/* line 268, site.css.scss */
->>>>>>> Stashed changes
 #toggle-nav:checked ~ .box ul {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
 
-<<<<<<< Updated upstream
-/* line 159, site.css.scss */
-=======
-/* line 275, site.css.scss */
->>>>>>> Stashed changes
 #toggle-nav:checked ~ #toggle-nav-label {
-  background: #fff;
-  color: rgba(0, 0, 0, 0.8); }
+	background: #fff;
+	color: rgba(0,0,0,0.8);
+}
 
-<<<<<<< Updated upstream
-/* line 167, site.css.scss */
-=======
-/* line 283, site.css.scss */
->>>>>>> Stashed changes
-.top-nav a {
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  float: left;
-  margin: 2em 4em; }
+.top-nav {
 
-<<<<<<< Updated upstream
-/* line 181, site.css.scss */
-.bottom-nav .copyright {
-  right: 30px;
-  position: absolute;
-  bottom: 39px; }
-/* line 187, site.css.scss */
-=======
-/* line 297, site.css.scss */
-.bottom-nav .copyright {
-  right: 30px;
-  position: absolute;
-  bottom: 3em; }
-/* line 303, site.css.scss */
->>>>>>> Stashed changes
-.bottom-nav .instagram {
-  left: 30px;
-  position: absolute;
-  bottom: 39px;
-  text-decoration: none; }
 
-<<<<<<< Updated upstream
-/* line 196, site.css.scss */
-=======
-/* line 312, site.css.scss */
->>>>>>> Stashed changes
+       a {
+         text-decoration: none;
+         text-transform: uppercase;
+         display: block;
+         float: left;
+          margin: 2em 4em;
+
+       }
+
+
+}
+
+.bottom-nav {
+
+    .copyright {
+      right: 30px;
+      position: absolute;
+      bottom: 3em;
+    }
+
+    .instagram {
+      left: 30px;
+      position: absolute;
+      bottom: 3em;
+      text-decoration: none;
+    }
+
+}
+
 .madbury-logo {
   position: absolute;
   right: 40px;
-  top: 0; }
-<<<<<<< Updated upstream
-  @media screen and (max-width: 450px) {
-    /* line 196, site.css.scss */
-    .madbury-logo {
-      right: 10px; } }
-  /* line 205, site.css.scss */
-=======
-  /* line 318, site.css.scss */
->>>>>>> Stashed changes
-  .madbury-logo img {
+    top: 0;
+
+
+  img {
     width: 7em;
-    z-index: 10000;
-    position: relative; }
+		z-index: 10000;
+position: relative;
 
-<<<<<<< Updated upstream
-/* line 214, site.css.scss */
-=======
-/* line 327, site.css.scss */
->>>>>>> Stashed changes
+  }
+
+}
+
 .logo {
-  display: block;
-  width: 838px;
-  margin: 0 auto;
-  position: relative; }
-<<<<<<< Updated upstream
-  @media screen and (max-width: 850px) {
-    /* line 214, site.css.scss */
-    .logo {
-      width: 610px; } }
-  @media screen and (max-width: 650px) {
-    /* line 214, site.css.scss */
-    .logo {
-      width: 320px; } }
-  /* line 228, site.css.scss */
-  .logo img {
-    height: 20.75em;
-    margin-top: 15%; }
-    @media screen and (max-width: 850px) {
-      /* line 228, site.css.scss */
-      .logo img {
-        margin-top: 11%;
-        height: 14.75em; } }
-    @media screen and (max-width: 650px) {
-      /* line 228, site.css.scss */
-=======
-  @media screen and (max-width: 1000px) {
-    /* line 327, site.css.scss */
-    .logo {
-      width: 610px; } }
-  @media screen and (max-width: 850px) {
-    /* line 327, site.css.scss */
-    .logo {
-      width: 350px; } }
-  /* line 341, site.css.scss */
-  .logo img {
-    height: 20.75em;
-    margin-top: 15%; }
-    @media screen and (max-width: 1000px) {
-      /* line 341, site.css.scss */
-      .logo img {
-        margin-top: 11%;
-        height: 14.75em; } }
-    @media screen and (max-width: 850px) {
-      /* line 341, site.css.scss */
->>>>>>> Stashed changes
-      .logo img {
-        margin-top: 11%;
-        height: 7.75em; } }
 
-<<<<<<< Updated upstream
-/* line 245, site.css.scss */
-=======
-/* line 358, site.css.scss */
->>>>>>> Stashed changes
+  display: block;
+width: 838px;
+margin: 0 auto;
+position: relative;
+  @media screen and (max-width: $break-large) {
+    width: 610px;
+  }
+
+  @media screen and (max-width: $break-small) {
+    width: 350px;
+  }
+
+img {
+  height: 20.75em;
+  margin-top: 15%;
+
+  @media screen and (max-width: $break-large) {
+    margin-top: 11%;
+    height: 14.75em;
+  }
+  @media screen and (max-width: $break-small) {
+    margin-top: 11%;
+    height: 8.75em;
+  }
+}
+}
+
+
+
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s;
   margin-left: auto;
-  margin-right: auto;
-  margin: 0 auto;
-  height: 100%;
-  position: relative; }
+      margin-right: auto;
+      margin: 0 auto;
+      height: 100%;
+      position: relative;
+}
 
 @-webkit-keyframes welcome {
   from {
     -webkit-transform: scale(0);
-    opacity: 0; }
+    opacity: 0;
+  }
   50% {
-    -webkit-transform: scale(0);
-    opacity: 0; }
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
   82.5% {
     -webkit-transform: scale(1.18);
     -webkit-animation-timing-function: ease-out;
-    opacity: 1; }
+    opacity: 1;
+  }
   to {
-    -webkit-transform: scale(1); } }
+    -webkit-transform: scale(1);
+  }
+
+
+}

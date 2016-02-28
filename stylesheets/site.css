@@ -349,39 +349,147 @@ table {
 
 /* line 7, site.css.scss */
 body {
+<<<<<<< Updated upstream
   background-image: url(http://phironaka.github.io/heavy-creamery/images/IMG_7065_4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #fff;
+=======
+  background-color: #ff5f5f;
+>>>>>>> Stashed changes
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   letter-spacing: .12em;
   font-size: .8em; }
+<<<<<<< Updated upstream
   @media screen and (max-width: 650px) {
+=======
+  @media screen and (max-width: 850px) {
+>>>>>>> Stashed changes
     /* line 7, site.css.scss */
     body {
       background-image: none;
-      background: #ff5f5f; } }
+      background: #FC6063; } }
 
+<<<<<<< Updated upstream
 /* line 28, site.css.scss */
+=======
+/* line 24, site.css.scss */
+>>>>>>> Stashed changes
 body, img {
   transition: all .2s linear;
   -o-transition: all .2s linear;
   -moz-transition: all .2s linear;
   -webkit-transition: all .2s linear; }
 
+<<<<<<< Updated upstream
 /* line 36, site.css.scss */
 a {
   color: black; }
 
 /* line 39, site.css.scss */
+=======
+/* line 31, site.css.scss */
+#myBtn {
+  background: none;
+  border: none;
+  outline: 0; }
+
+/* line 36, site.css.scss */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 100px;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: transparent;
+  /* Fallback color */ }
+
+/* Modal Content */
+/* line 51, site.css.scss */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.2s;
+  animation-name: animatetop;
+  animation-duration: 0.2s; }
+  /* line 61, site.css.scss */
+  .modal-content img {
+    max-width: 100%; }
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -200px;
+    opacity: 0; }
+  to {
+    top: 0px;
+    opacity: 1; } }
+@keyframes animatetop {
+  from {
+    top: -200px;
+    opacity: 0; }
+  to {
+    top: 0px;
+    opacity: 1; } }
+/* The Close Button */
+/* line 79, site.css.scss */
+.close {
+  float: right;
+  font-size: 24px;
+  margin: 10px 0; }
+
+/* line 85, site.css.scss */
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* line 92, site.css.scss */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white; }
+
+/* line 98, site.css.scss */
+.modal-body {
+  padding: 2px 16px; }
+
+/* line 100, site.css.scss */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white; }
+
+/* line 107, site.css.scss */
+a {
+  color: black; }
+
+/* line 110, site.css.scss */
+>>>>>>> Stashed changes
 #head {
   margin-top: 20px;
   height: 109px; }
 
+<<<<<<< Updated upstream
 /* line 41, site.css.scss */
 .container {
   display: block;
@@ -393,6 +501,25 @@ a {
       width: 100%; } }
 
 /* line 51, site.css.scss */
+=======
+/* line 112, site.css.scss */
+.container {
+  max-width: 72em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 3em; }
+  @media screen and (max-width: 1000px) {
+    /* line 112, site.css.scss */
+    .container {
+      max-width: 60em; } }
+  @media screen and (max-width: 850px) {
+    /* line 112, site.css.scss */
+    .container {
+      width: 100%; } }
+
+/* line 128, site.css.scss */
+>>>>>>> Stashed changes
 #menu .box {
   position: absolute;
   text-align: center;
@@ -402,11 +529,12 @@ a {
   height: 100%;
   left: 0px;
   top: 0px;
-  background: #ff5f5f;
+  background: #FC6063;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
+<<<<<<< Updated upstream
   /* line 66, site.css.scss */
   #menu .box h1 {
     width: 402px;
@@ -441,6 +569,67 @@ a {
       max-width: 338px; }
 
 /* line 99, site.css.scss */
+=======
+  /* line 143, site.css.scss */
+  #menu .box h1 {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 31.76157%;
+    margin: 6.2em 0 2em;
+    font-size: 2.5em;
+    letter-spacing: normal;
+    text-align: left;
+    float: left;
+    padding: 0 26px 0 0; }
+    @media screen and (max-width: 1000px) {
+      /* line 143, site.css.scss */
+      #menu .box h1 {
+        width: 28.76157%;
+        margin: 9.2em 0 2em;
+        font-size: 1.9em; } }
+    @media screen and (max-width: 850px) {
+      /* line 143, site.css.scss */
+      #menu .box h1 {
+        font-size: 2.8em;
+        width: 320px;
+        margin: 4em 1em 1em; } }
+  /* line 169, site.css.scss */
+  #menu .box .contact {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 28.76157%;
+    margin-top: 14em; }
+    @media screen and (max-width: 1000px) {
+      /* line 169, site.css.scss */
+      #menu .box .contact {
+        margin-top: 16em; } }
+    @media screen and (max-width: 850px) {
+      /* line 169, site.css.scss */
+      #menu .box .contact {
+        float: none;
+        margin-top: 3em;
+        margin-left: 3em; } }
+    /* line 188, site.css.scss */
+    #menu .box .contact p {
+      margin: 2em 0;
+      font-size: 1em;
+      font-weight: normal;
+      letter-spacing: normal;
+      text-align: left; }
+      @media screen and (max-width: 850px) {
+        /* line 188, site.css.scss */
+        #menu .box .contact p {
+          width: 350px;
+          font-size: 1.5em;
+          margin: 1em auto; } }
+    /* line 205, site.css.scss */
+    #menu .box .contact img {
+      max-width: 338px; }
+
+/* line 215, site.css.scss */
+>>>>>>> Stashed changes
 #menu ul {
   position: relative;
   top: 20%;
@@ -453,12 +642,20 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
+<<<<<<< Updated upstream
 /* line 112, site.css.scss */
+=======
+/* line 228, site.css.scss */
+>>>>>>> Stashed changes
 #menu li {
   display: inline-block;
   margin: 20px; }
 
+<<<<<<< Updated upstream
 /* line 117, site.css.scss */
+=======
+/* line 233, site.css.scss */
+>>>>>>> Stashed changes
 #menu li a {
   border-radius: 3px;
   padding: 15px;
@@ -471,16 +668,28 @@ a {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
+<<<<<<< Updated upstream
 /* line 130, site.css.scss */
 #menu li a:hover {
   border-color: #fff; }
 
 /* line 132, site.css.scss */
+=======
+/* line 246, site.css.scss */
+#menu li a:hover {
+  border-color: #fff; }
+
+/* line 248, site.css.scss */
+>>>>>>> Stashed changes
 #menu li a i {
   margin-right: 5px;
   font-size: 24px; }
 
+<<<<<<< Updated upstream
 /* line 137, site.css.scss */
+=======
+/* line 253, site.css.scss */
+>>>>>>> Stashed changes
 #toggle-nav-label {
   position: absolute;
   left: 30px;
@@ -488,28 +697,48 @@ a {
   cursor: pointer;
   text-transform: uppercase; }
 
+<<<<<<< Updated upstream
 /* line 145, site.css.scss */
 #toggle-nav {
   display: none; }
 
 /* line 147, site.css.scss */
+=======
+/* line 261, site.css.scss */
+#toggle-nav {
+  display: none; }
+
+/* line 263, site.css.scss */
+>>>>>>> Stashed changes
 #toggle-nav:checked ~ .box {
   opacity: 1;
   z-index: 400; }
 
+<<<<<<< Updated upstream
 /* line 152, site.css.scss */
+=======
+/* line 268, site.css.scss */
+>>>>>>> Stashed changes
 #toggle-nav:checked ~ .box ul {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1); }
 
+<<<<<<< Updated upstream
 /* line 159, site.css.scss */
+=======
+/* line 275, site.css.scss */
+>>>>>>> Stashed changes
 #toggle-nav:checked ~ #toggle-nav-label {
   background: #fff;
   color: rgba(0, 0, 0, 0.8); }
 
+<<<<<<< Updated upstream
 /* line 167, site.css.scss */
+=======
+/* line 283, site.css.scss */
+>>>>>>> Stashed changes
 .top-nav a {
   text-decoration: none;
   text-transform: uppercase;
@@ -517,39 +746,61 @@ a {
   float: left;
   margin: 2em 4em; }
 
+<<<<<<< Updated upstream
 /* line 181, site.css.scss */
 .bottom-nav .copyright {
   right: 30px;
   position: absolute;
   bottom: 39px; }
 /* line 187, site.css.scss */
+=======
+/* line 297, site.css.scss */
+.bottom-nav .copyright {
+  right: 30px;
+  position: absolute;
+  bottom: 3em; }
+/* line 303, site.css.scss */
+>>>>>>> Stashed changes
 .bottom-nav .instagram {
   left: 30px;
   position: absolute;
   bottom: 39px;
   text-decoration: none; }
 
+<<<<<<< Updated upstream
 /* line 196, site.css.scss */
+=======
+/* line 312, site.css.scss */
+>>>>>>> Stashed changes
 .madbury-logo {
   position: absolute;
   right: 40px;
   top: 0; }
+<<<<<<< Updated upstream
   @media screen and (max-width: 450px) {
     /* line 196, site.css.scss */
     .madbury-logo {
       right: 10px; } }
   /* line 205, site.css.scss */
+=======
+  /* line 318, site.css.scss */
+>>>>>>> Stashed changes
   .madbury-logo img {
     width: 7em;
     z-index: 10000;
     position: relative; }
 
+<<<<<<< Updated upstream
 /* line 214, site.css.scss */
+=======
+/* line 327, site.css.scss */
+>>>>>>> Stashed changes
 .logo {
   display: block;
   width: 838px;
   margin: 0 auto;
   position: relative; }
+<<<<<<< Updated upstream
   @media screen and (max-width: 850px) {
     /* line 214, site.css.scss */
     .logo {
@@ -569,11 +820,36 @@ a {
         height: 14.75em; } }
     @media screen and (max-width: 650px) {
       /* line 228, site.css.scss */
+=======
+  @media screen and (max-width: 1000px) {
+    /* line 327, site.css.scss */
+    .logo {
+      width: 610px; } }
+  @media screen and (max-width: 850px) {
+    /* line 327, site.css.scss */
+    .logo {
+      width: 350px; } }
+  /* line 341, site.css.scss */
+  .logo img {
+    height: 20.75em;
+    margin-top: 15%; }
+    @media screen and (max-width: 1000px) {
+      /* line 341, site.css.scss */
+      .logo img {
+        margin-top: 11%;
+        height: 14.75em; } }
+    @media screen and (max-width: 850px) {
+      /* line 341, site.css.scss */
+>>>>>>> Stashed changes
       .logo img {
         margin-top: 11%;
         height: 7.75em; } }
 
+<<<<<<< Updated upstream
 /* line 245, site.css.scss */
+=======
+/* line 358, site.css.scss */
+>>>>>>> Stashed changes
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s;

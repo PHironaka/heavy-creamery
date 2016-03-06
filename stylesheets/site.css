@@ -15,7 +15,7 @@ footer,
 header,
 hgroup,
 nav,
-section,
+section, 
 summary {
   display: block; }
 
@@ -533,7 +533,7 @@ a {
       /* line 163, site.css.scss */
       #menu .box h1 {
         font-size: 2.8em;
-        width: 280px;
+        width: 300px;
         margin: 1em 1em 1em; } }
         
    @media screen and (max-width: 450px) {
@@ -541,6 +541,7 @@ a {
           #menu .box h1 {
             font-size: 17px;
               float: none;
+              width: 300px;
              } }     
   /* line 189, site.css.scss */
   #menu .box .contact {
@@ -594,7 +595,7 @@ a {
    @media screen and (max-width: 450px) {
         /* line 207, site.css.scss */
         #menu .box .contact img {
-          max-width: 250px;
+          max-width: 120px;
          } }
 /* line 234, site.css.scss */
 #menu ul {

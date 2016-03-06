@@ -367,11 +367,8 @@ body {
   @media screen and (min-width: 980px) and (max-width: 1024px) {
     /* line 7, site.css.scss */
     body {
-      background-image: url(http://phironaka.github.io/heavy-creamery/images/IMG_7065_4.jpg); } }
-  @media screen and (min-width: 760px) and (max-width: 980px) {
-    /* line 7, site.css.scss */
-    body {
       background-image: url(http://phironaka.github.io/heavy-creamery/images/IMG_7065_3.jpg); } }
+
   
 
 /* line 44, site.css.scss */

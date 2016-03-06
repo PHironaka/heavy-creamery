@@ -696,7 +696,11 @@ a {
       .logo img {
         margin-top: 11%;
         height: 8.75em; } }
-
+   @media screen and (max-width: 450px) {
+          /* line 360, site.css.scss */
+          .logo img {
+            margin-top: 8%;
+    height: 5.75em;} }       
 /* line 377, site.css.scss */
 .welcome {
   -webkit-animation-name: welcome;

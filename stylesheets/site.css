@@ -533,13 +533,14 @@ a {
       /* line 163, site.css.scss */
       #menu .box h1 {
         font-size: 2.8em;
-        width: 320px;
+        width: 280px;
         margin: 1em 1em 1em; } }
         
    @media screen and (max-width: 450px) {
           /* line 163, site.css.scss */
           #menu .box h1 {
             font-size: 35px;
+              float: none;
              } }     
   /* line 189, site.css.scss */
   #menu .box .contact {
@@ -581,7 +582,12 @@ a {
     /* line 224, site.css.scss */
     #menu .box .contact img {
       max-width: 338px; }
-
+      
+   @media screen and (max-width: 450px) {
+        /* line 207, site.css.scss */
+        #menu .box .contact p {
+          max-width: 250px;
+         } }
 /* line 234, site.css.scss */
 #menu ul {
   position: relative;

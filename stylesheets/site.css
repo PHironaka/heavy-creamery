@@ -375,7 +375,7 @@ body {
 
 /* Mobile HD */
 @media screen and (min-width: 350px) and (max-width: 760px){
-           background-color: #ff5f5f;
+           background-image:none;
 }
 
 /* line 44, site.css.scss */

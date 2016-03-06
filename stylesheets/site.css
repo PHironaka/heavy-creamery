@@ -575,7 +575,7 @@ a {
      @media screen and (max-width: 450px) {
             /* line 207, site.css.scss */
             #menu .box .contact p {
-              width: 300px;
+              width: 270px;
               font-size: 16px;
               } }
               
@@ -585,7 +585,7 @@ a {
       
    @media screen and (max-width: 450px) {
         /* line 207, site.css.scss */
-        #menu .box .contact p {
+        #menu .box .contact img {
           max-width: 250px;
          } }
 /* line 234, site.css.scss */
@@ -687,7 +687,12 @@ a {
     width: 7em;
     z-index: 10000;
     position: relative; }
-
+   @media screen and (max-width: 450px) {
+    /* line 346, site.css.scss */
+    .madbury-logo {
+      width: 120px; } }
+     
+    
 /* line 346, site.css.scss */
 .logo {
   display: block;

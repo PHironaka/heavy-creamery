@@ -542,6 +542,7 @@ a {
             font-size: 17px;
               float: none;
               width: 300px;
+              margin: 10px auto; 
              } }     
   /* line 189, site.css.scss */
   #menu .box .contact {
@@ -597,8 +598,7 @@ a {
         #menu .box .contact img {
           max-width: 275px;
          } }
-       #menu .box .contact-carton img {
-      max-width: 100px; }    
+       
          
 /* line 234, site.css.scss */
 #menu ul {
@@ -617,7 +617,9 @@ a {
 #menu li {
   display: inline-block;
   margin: 20px; }
-
+  
+#menu .box .contact-carton img {
+      max-width: 90px; }    
 /* line 252, site.css.scss */
 #menu li a {
   border-radius: 3px;

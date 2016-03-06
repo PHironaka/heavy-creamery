@@ -619,7 +619,8 @@ a {
   margin: 20px; }
   
 #menu .box .contact-carton img {
-      max-width: 90px; }    
+          max-width: 80px;
+    margin-top: 60px; }    
 /* line 252, site.css.scss */
 #menu li a {
   border-radius: 3px;

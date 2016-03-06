@@ -368,15 +368,14 @@ body {
     /* line 7, site.css.scss */
     body {
       background-image: url(http://phironaka.github.io/heavy-creamery/images/IMG_7065_4.jpg); } }
-
-  @media screen and (min-width: 760px) and (max-width: 980px){
-         background-image: url(hhttp://phironaka.github.io/heavy-creamery/images/IMG_7065_3.jpg);
-}
-
-/* Mobile HD */
-@media screen and (min-width: 350px) and (max-width: 760px){
-           background-image:none;
-}
+  @media screen and (min-width: 760px) and (max-width: 980px) {
+    /* line 7, site.css.scss */
+    body {
+      background-image: url(http://phironaka.github.io/heavy-creamery/images/IMG_7065_3.jpg); } }
+  @media screen and (min-width: 350px) and (max-width: 760px) {
+    /* line 7, site.css.scss */
+    body {
+      background-image: none; } }
 
 /* line 44, site.css.scss */
 body, img {

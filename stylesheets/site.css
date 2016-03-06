@@ -354,7 +354,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: #ff5f5f;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -539,10 +539,11 @@ a {
    @media screen and (max-width: 450px) {
           /* line 163, site.css.scss */
           #menu .box h1 {
-            font-size: 17px;
-              float: none;
-              width: 270px;
-              margin: 10px auto; 
+                font-size: 20px;
+    float: none;
+    width: 184px;
+    margin: 40px auto;
+    text-align: center;
              } }     
   /* line 189, site.css.scss */
   #menu .box .contact {

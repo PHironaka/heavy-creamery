@@ -539,7 +539,7 @@ a {
    @media screen and (max-width: 450px) {
           /* line 163, site.css.scss */
           #menu .box h1 {
-            font-size: 35px;
+            font-size: 17px;
               float: none;
              } }     
   /* line 189, site.css.scss */
@@ -558,6 +558,13 @@ a {
       #menu .box .contact {
         float: none;
         margin-left: 3em; } }
+        
+   @media screen and (max-width: 450px) {
+      /* line 189, site.css.scss */
+      #menu .box .contact {
+        float: none;
+        margin-top: 20px; } }
+        
     /* line 207, site.css.scss */
     #menu .box .contact p {
       margin: 2em 0;
@@ -576,7 +583,8 @@ a {
             /* line 207, site.css.scss */
             #menu .box .contact p {
               width: 270px;
-              font-size: 16px;
+              font-size: 14px;
+              margin: 9px auto;
               } }
               
     /* line 224, site.css.scss */
@@ -690,7 +698,9 @@ a {
    @media screen and (max-width: 450px) {
     /* line 346, site.css.scss */
     .madbury-logo {
-      width: 120px; } }
+      width: 120px; 
+       z-index: 1;
+    } }
      
     
 /* line 346, site.css.scss */

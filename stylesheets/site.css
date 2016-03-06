@@ -619,10 +619,16 @@ a {
   margin: 20px; }
   
 #menu .box .contact-carton img {
-          max-width: 80px;
-    margin-top: 60px; 
+
    display:block;
 }    
+
+ @media screen and (max-width: 450px) {
+            /* line 207, site.css.scss */
+            #menu .box .contact-carton img {
+             display:none;
+              } }
+              
 /* line 252, site.css.scss */
 #menu li a {
   border-radius: 3px;

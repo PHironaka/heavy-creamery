@@ -354,7 +354,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #ff5f5f;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

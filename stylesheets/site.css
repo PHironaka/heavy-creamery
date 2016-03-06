@@ -541,7 +541,7 @@ a {
           #menu .box h1 {
             font-size: 17px;
               float: none;
-              width: 300px;
+              width: 270px;
               margin: 10px auto; 
              } }     
   /* line 189, site.css.scss */
@@ -620,7 +620,9 @@ a {
   
 #menu .box .contact-carton img {
           max-width: 80px;
-    margin-top: 60px; }    
+    margin-top: 60px; 
+   display:block;
+}    
 /* line 252, site.css.scss */
 #menu li a {
   border-radius: 3px;

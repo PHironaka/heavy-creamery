@@ -618,9 +618,14 @@ a {
 #menu li {
   display: inline-block;
   margin: 20px; }
+
+
   
 #menu .box .contact-carton img {
-
+    float: left;
+    margin-right: 3.57866%;
+    width: 17.76157%;
+    margin-top: 14em;
    display:block;
 }    
 
@@ -628,6 +633,7 @@ a {
             /* line 207, site.css.scss */
             #menu .box .contact-carton img {
              display:none;
+             
               } }
               
 /* line 252, site.css.scss */

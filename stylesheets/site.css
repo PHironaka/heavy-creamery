@@ -595,8 +595,11 @@ a {
    @media screen and (max-width: 450px) {
         /* line 207, site.css.scss */
         #menu .box .contact img {
-          max-width: 120px;
+          max-width: 275px;
          } }
+       #menu .box .contact-carton img {
+      max-width: 100px; }    
+         
 /* line 234, site.css.scss */
 #menu ul {
   position: relative;
